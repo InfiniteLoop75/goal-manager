@@ -4,23 +4,23 @@
   "description": "Simple application for task management",
   "main": "server.js",
   "scripts": {
-    "test": "npm test",
+    "test": "node test",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InfiniteLoop75/task-manager.git"
+    "url": "git+https://github.com/InfiniteLoop75/goal-manager.git"
   },
   "keywords": [
-    "task",
+    "goal",
     "manager"
   ],
   "author": "Ibrokhimjon Saydakhmatov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/InfiniteLoop75/task-manager/issues"
+    "url": "https://github.com/InfiniteLoop75/goal-manager/issues"
   },
-  "homepage": "https://github.com/InfiniteLoop75/task-manager#readme",
+  "homepage": "https://github.com/InfiniteLoop75/goal-manager#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
