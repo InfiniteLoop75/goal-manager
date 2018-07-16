@@ -1,9 +1,6 @@
 const bCrypt = require('bcrypt-nodejs');
-const passport = require('passport');
-const {User} = require('../models/user');
-const {Address} = require('../models/address');
-module.exports = function(passportE, user){
-    var UserE = user;
+module.exports = function(passport, user){
+    var User = user;
     var LocalStrategy = require('passport-local').Strategy;
 
     // METHOD FOR SIGNUP
@@ -58,8 +55,8 @@ passport.use('local-signin', new LocalStrategy({
     passwordField: 'Password',
     passReqToCallback: true
 },
-(req, email, password, done)=>{
-    var UserE = user;
+(req, username, password, done)=>{
+    var User = user;
     var isPasswordValid = (userPassword, Password)=>{
         return bCrypt.compareSync(Password, userPassword);
     };
