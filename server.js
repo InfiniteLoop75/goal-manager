@@ -5,7 +5,7 @@ const {Task} = require('./models/task');
 const {SubTask} = require('./models/subtask');
 const {Address} = require('./models/address');
 const {User} = require('./models/user');
-User.hasMany(Address);
+User.hasOne(Address);
 User.hasMany(Task);
 Address.belongsTo(User);
 Task.belongsTo(User);
